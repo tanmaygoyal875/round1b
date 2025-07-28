@@ -7,8 +7,6 @@ def main():
     input_json_path = "input/challenge1b_input.json"
     pdf_folder = "input/PDFs"
     output_path = "output/challenge1b_output.json"
-
-    # Load metadata
     filenames, persona, job, metadata = load_input_metadata(input_json_path)
 
     results = []
