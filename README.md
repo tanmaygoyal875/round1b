@@ -15,6 +15,14 @@ Extract and rank sections from 3–10 PDFs based on a given persona and job-to-b
 
 ## 🐳 Docker Commands
 
-Build:
-```bash
+## Step 1: Making img
+
+```
 docker build --platform linux/amd64 -t adobehack:round1b .
+```
+
+## Step 2: Compiling n Runing
+
+```
+docker run --rm   -v "$PWD/input:/app/input"   -v "$PWD/output:/app/output"   --network none   adobehack:round1b
+```
